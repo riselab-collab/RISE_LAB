@@ -3,6 +3,7 @@ import archaeoImg from '../assets/materials/archaeometallurgy.jpg';
 import steelImg from '../assets/materials/univariant_steels.jpg';
 import copperImg from '../assets/materials/copper_wire.jpg';
 
+
 import { researchMaterials } from '../data/researchData';
 
 const MaterialsPath = () => {

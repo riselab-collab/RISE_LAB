@@ -2,6 +2,7 @@ import React from 'react';
 import tripTwipImg from '../assets/mechanisms/trip_twip.jpg';
 import misfitImg from '../assets/mechanisms/misfit_volume.jpg';
 
+
 import { researchMechanisms } from '../data/researchData';
 
 const Mechanisms = () => {

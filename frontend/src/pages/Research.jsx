@@ -2,6 +2,11 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { BookOpen, Settings, Layers } from 'lucide-react';
 
+// Import Illustrations
+import methodsIllu from '../assets/research/methods-illustration.png';
+import mechanismsIllu from '../assets/research/mechanisms-illustration.png';
+import materialsIllu from '../assets/research/materials-path-illustration.png';
+
 const Research = () => {
   return (
     <div className="min-h-screen bg-gray-50 flex flex-col items-center justify-center p-4">
@@ -21,25 +26,43 @@ const Research = () => {
         <div className="w-24 h-1 bg-rise-ocean mx-auto rounded-full"></div>
 
         {/* Navigation Buttons */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 pt-8">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 pt-8 px-4">
           <Link to="/research/methods" className="group">
-            <div className="bg-white p-8 rounded-xl shadow-md border border-gray-100 hover:shadow-xl hover:border-rise-ocean transition-all duration-300 transform hover:-translate-y-1">
-              <BookOpen size={48} className="mx-auto text-rise-ocean mb-4 group-hover:scale-110 transition-transform" />
-              <h3 className="text-xl font-bold text-gray-800 group-hover:text-rise-ocean">Methods</h3>
+            <div className="bg-white p-8 rounded-2xl shadow-md border border-gray-100 hover:shadow-xl hover:border-rise-ocean transition-all duration-300 transform hover:-translate-y-2 h-full flex flex-col items-center text-center">
+              <div className="w-48 h-48 mb-6 flex items-center justify-center">
+                <img
+                  src={methodsIllu}
+                  alt="Methods"
+                  className="w-full h-full object-contain drop-shadow-sm group-hover:scale-110 transition-transform duration-500"
+                />
+              </div>
+              <h3 className="text-2xl font-bold text-gray-800 group-hover:text-rise-ocean mt-auto">Methods</h3>
             </div>
           </Link>
 
           <Link to="/research/mechanisms" className="group">
-            <div className="bg-white p-8 rounded-xl shadow-md border border-gray-100 hover:shadow-xl hover:border-rise-ocean transition-all duration-300 transform hover:-translate-y-1">
-              <Settings size={48} className="mx-auto text-rise-ocean mb-4 group-hover:scale-110 transition-transform" />
-              <h3 className="text-xl font-bold text-gray-800 group-hover:text-rise-ocean">Mechanisms</h3>
+            <div className="bg-white p-8 rounded-2xl shadow-md border border-gray-100 hover:shadow-xl hover:border-rise-ocean transition-all duration-300 transform hover:-translate-y-2 h-full flex flex-col items-center text-center">
+              <div className="w-48 h-48 mb-6 flex items-center justify-center">
+                <img
+                  src={mechanismsIllu}
+                  alt="Mechanisms"
+                  className="w-full h-full object-contain drop-shadow-sm group-hover:scale-110 transition-transform duration-500"
+                />
+              </div>
+              <h3 className="text-2xl font-bold text-gray-800 group-hover:text-rise-ocean mt-auto">Mechanisms</h3>
             </div>
           </Link>
 
           <Link to="/research/materials-path" className="group">
-            <div className="bg-white p-8 rounded-xl shadow-md border border-gray-100 hover:shadow-xl hover:border-rise-ocean transition-all duration-300 transform hover:-translate-y-1">
-              <Layers size={48} className="mx-auto text-rise-ocean mb-4 group-hover:scale-110 transition-transform" />
-              <h3 className="text-xl font-bold text-gray-800 group-hover:text-rise-ocean">Materials Path</h3>
+            <div className="bg-white p-8 rounded-2xl shadow-md border border-gray-100 hover:shadow-xl hover:border-rise-ocean transition-all duration-300 transform hover:-translate-y-2 h-full flex flex-col items-center text-center">
+              <div className="w-48 h-48 mb-6 flex items-center justify-center">
+                <img
+                  src={materialsIllu}
+                  alt="Materials Path"
+                  className="w-full h-full object-contain drop-shadow-sm group-hover:scale-110 transition-transform duration-500"
+                />
+              </div>
+              <h3 className="text-2xl font-bold text-gray-800 group-hover:text-rise-ocean mt-auto">Materials Path</h3>
             </div>
           </Link>
         </div>

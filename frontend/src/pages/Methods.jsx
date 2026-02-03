@@ -6,6 +6,7 @@ import React from 'react';
 import tensileImg from '../assets/methods/tensile_stage.jpg';
 import recyclingImg from '../assets/methods/recycling_machine.jpg';
 
+
 import { researchMethods } from '../data/researchData';
 
 const Methods = () => {
