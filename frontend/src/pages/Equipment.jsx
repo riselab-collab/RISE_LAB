@@ -17,13 +17,13 @@ const Equipment = () => {
       <div className="max-w-7xl mx-auto">
         <div className="flex flex-col sm:flex-row justify-between items-center mb-8">
           <div>
-            <h1 className="text-3xl font-bold text-gray-900">Equipment Inventory</h1>
+            <h1 className="text-3xl font-bold text-rise-deep">Equipment Inventory</h1>
             <p className="text-gray-600 mt-1">Browse and request access to lab equipment.</p>
           </div>
           <button
             type="button"
             onClick={() => handleOpenModal()}
-            className="mt-4 sm:mt-0 bg-iitrpr-blue text-white px-6 py-2 rounded-lg hover:bg-blue-800 transition shadow-sm font-medium"
+            className="mt-4 sm:mt-0 bg-rise-surf text-white px-6 py-2 rounded-lg hover:bg-rise-ocean transition shadow-sm font-medium"
           >
             Request Equipment
           </button>
@@ -49,7 +49,7 @@ const Equipment = () => {
                 {equipmentList.map((item) => (
                   <tr key={item.id} className="hover:bg-gray-50 transition group cursor-pointer" onClick={() => handleOpenModal(item.name)}>
                     <td className="px-6 py-4 whitespace-nowrap">
-                      <div className="text-sm font-medium text-gray-900 group-hover:text-blue-700 transition-colors">{item.name}</div>
+                      <div className="text-sm font-medium text-rise-deep group-hover:text-rise-ocean transition-colors">{item.name}</div>
                     </td>
                     <td className="px-6 py-4 whitespace-nowrap">
                       <div className="text-sm text-gray-500">{item.category}</div>

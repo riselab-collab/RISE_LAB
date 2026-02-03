@@ -91,7 +91,7 @@ const Gallery = () => {
   return (
     <div className="min-h-screen bg-slate-50 font-sans text-slate-800">
       {/* Header */}
-      <div className="bg-white border-b border-gray-200 py-12 shadow-sm">
+      <div className="bg-white border-b border-rise-frost py-12 shadow-sm">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <h1 className="text-4xl font-bold text-slate-900 tracking-tight">Gallery</h1>
         </div>

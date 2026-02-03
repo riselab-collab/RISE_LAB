@@ -12,16 +12,16 @@ const Footer = () => {
           <div>
             <h3 className="text-xl font-bold text-white mb-6 border-b border-gray-700 pb-2 inline-block">Quick Links</h3>
             <ul className="grid grid-cols-2 gap-x-8 gap-y-3 text-sm">
-              <li><Link to="/" className="hover:text-blue-400 transition-colors">Home</Link></li>
-              <li><Link to="/team" className="hover:text-blue-400 transition-colors">Team</Link></li>
-              <li><Link to="/research" className="hover:text-blue-400 transition-colors">Research</Link></li>
-              <li><Link to="/publications" className="hover:text-blue-400 transition-colors">Publications</Link></li>
-              <li><Link to="/projects-funded" className="hover:text-blue-400 transition-colors">Projects Funded</Link></li>
-              <li><Link to="/teachings" className="hover:text-blue-400 transition-colors">Resources</Link></li>
-              <li><Link to="/positions" className="hover:text-blue-400 transition-colors">Positions</Link></li>
-              <li><Link to="/equipment" className="hover:text-blue-400 transition-colors">Equipment</Link></li>
-              <li><Link to="/gallery" className="hover:text-blue-400 transition-colors">Gallery</Link></li>
-              <li><Link to="/contact" className="hover:text-blue-400 transition-colors">Contact Us</Link></li>
+              <li><Link to="/" className="hover:text-rise-ocean transition-colors">Home</Link></li>
+              <li><Link to="/team" className="hover:text-rise-ocean transition-colors">Team</Link></li>
+              <li><Link to="/research" className="hover:text-rise-ocean transition-colors">Research</Link></li>
+              <li><Link to="/publications" className="hover:text-rise-ocean transition-colors">Publications</Link></li>
+              <li><Link to="/projects-funded" className="hover:text-rise-ocean transition-colors">Projects Funded</Link></li>
+              <li><Link to="/teachings" className="hover:text-rise-ocean transition-colors">Resources</Link></li>
+              <li><Link to="/positions" className="hover:text-rise-ocean transition-colors">Positions</Link></li>
+              <li><Link to="/equipment" className="hover:text-rise-ocean transition-colors">Equipment</Link></li>
+              <li><Link to="/gallery" className="hover:text-rise-ocean transition-colors">Gallery</Link></li>
+              <li><Link to="/contact" className="hover:text-rise-ocean transition-colors">Contact Us</Link></li>
             </ul>
           </div>
 

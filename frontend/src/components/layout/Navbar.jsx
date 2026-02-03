@@ -168,7 +168,7 @@ const Navbar = () => {
       {/* =========================================================================
           PART 1: TOP HEADER (New)
       ========================================================================= */}
-      <div className="bg-slate-50 border-b border-gray-200 py-2 hidden md:block">
+      <div className="bg-rise-surf border-b border-white/20 py-2 hidden md:block">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex justify-between items-center h-12">
 
           {/* LEFT: Logo */}
@@ -186,15 +186,15 @@ const Navbar = () => {
 
           {/* RIGHT: Socials, Email, Search */}
           <div className="flex items-center gap-6">
-            {/* Social Icons (Placeholders) */}
-            <div className="flex items-center gap-3 text-gray-500">
-              <a href="#" className="hover:text-blue-600 transition-colors"><Linkedin size={18} /></a>
-              <a href="#" className="hover:text-pink-600 transition-colors"><Instagram size={18} /></a>
-              <a href="#" className="hover:text-emerald-600 transition-colors"><Globe size={18} /></a>
+            {/* Social Icons */}
+            <div className="flex items-center gap-3 text-white">
+              <a href="#" className="hover:opacity-80 transition-opacity"><Linkedin size={18} /></a>
+              <a href="#" className="hover:opacity-80 transition-opacity"><Instagram size={18} /></a>
+              <a href="#" className="hover:opacity-80 transition-opacity"><Globe size={18} /></a>
             </div>
 
             {/* Email Button */}
-            <a href="mailto:lava@iitrpr.ac.in" className="flex items-center gap-2 bg-blue-100 text-blue-800 px-3 py-1.5 rounded-full text-xs font-bold hover:bg-blue-200 transition-colors">
+            <a href="mailto:lava@iitrpr.ac.in" className="flex items-center gap-2 bg-white/20 text-white px-3 py-1.5 rounded-full text-xs font-bold hover:bg-white/30 transition-colors">
               <Mail size={14} /> Email Us
             </a>
 
@@ -247,9 +247,9 @@ const Navbar = () => {
       </div>
 
       {/* =========================================================================
-          PART 2: MAIN NAVIGATION (Existing, updated routes)
+          PART 2: MAIN NAVIGATION (Updated)
       ========================================================================= */}
-      <nav className="bg-iitrpr-blue text-white shadow-lg sticky top-0 z-40 bg-[#1e3a8a]"> {/* Added explicit bg color code fallback/tailwind class */}
+      <nav className="bg-rise-surf text-white shadow-lg sticky top-0 z-40">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between h-20">
             {/* Logo/Title */}
@@ -272,8 +272,8 @@ const Navbar = () => {
                   <Link
                     to={link.path}
                     className={`px-3 py-2 rounded-md text-sm font-medium transition-colors flex items-center ${isActive(link.path)
-                      ? 'bg-blue-900 text-white'
-                      : 'text-gray-200 hover:bg-blue-800 hover:text-white'
+                      ? 'text-white underline decoration-2 underline-offset-4 font-bold'
+                      : 'text-white/90 hover:text-white hover:underline hover:decoration-1 hover:underline-offset-4'
                       }`}
                   >
                     {link.name}
@@ -320,7 +320,7 @@ const Navbar = () => {
 
         {/* Mobile Menu */}
         {isOpen && (
-          <div className="xl:hidden bg-blue-900 border-t border-blue-800">
+          <div className="xl:hidden bg-rise-surf border-t border-white/20">
             <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
               {/* Mobile Search Input */}
               <div className="px-3 pb-2">
@@ -352,8 +352,8 @@ const Navbar = () => {
                     to={link.path}
                     onClick={() => !link.dropdown && setIsOpen(false)}
                     className={`block px-3 py-2 rounded-md text-base font-medium ${isActive(link.path)
-                      ? 'bg-blue-950 text-white'
-                      : 'text-gray-300 hover:bg-blue-800 hover:text-white'
+                      ? 'bg-white/10 text-white underline decoration-2 underline-offset-4'
+                      : 'text-white/90 hover:bg-white/10 hover:text-white'
                       }`}
                   >
                     {link.name}
@@ -366,7 +366,7 @@ const Navbar = () => {
                           key={dropItem.name}
                           to={dropItem.path}
                           onClick={() => setIsOpen(false)}
-                          className="block px-3 py-2 rounded-md text-sm font-medium text-blue-200 hover:text-white hover:bg-blue-800"
+                          className="block px-3 py-2 rounded-md text-sm font-medium text-white/80 hover:text-white hover:bg-white/10"
                         >
                           - {dropItem.name}
                         </Link>

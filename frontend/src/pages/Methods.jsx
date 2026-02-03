@@ -15,14 +15,14 @@ const Methods = () => {
 
         {/* Header */}
         <div className="border-b border-gray-200 pb-4">
-          <h1 className="text-4xl font-bold text-blue-900 tracking-tight">Methods</h1>
+          <h1 className="text-4xl font-bold text-rise-deep tracking-tight">Methods</h1>
         </div>
 
         {/* ITEM 1 */}
         <section className="bg-white rounded-xl shadow-md border border-gray-100 overflow-hidden p-8">
           <div className="flex flex-col md:flex-row gap-8 items-center">
             <div className="md:w-1/2">
-              <h2 className="text-2xl font-bold text-blue-800 mb-4">{researchMethods[0].title}</h2>
+              <h2 className="text-2xl font-bold text-rise-deep mb-4">{researchMethods[0].title}</h2>
               <p className="text-gray-700 leading-relaxed text-lg text-justify">
                 {researchMethods[0].content}
               </p>
@@ -39,7 +39,7 @@ const Methods = () => {
         <section className="bg-white rounded-xl shadow-md border border-gray-100 overflow-hidden p-8">
           <div className="flex flex-col md:flex-row gap-8 items-center">
             <div className="md:w-1/2">
-              <h2 className="text-2xl font-bold text-blue-800 mb-4">{researchMethods[1].title}</h2>
+              <h2 className="text-2xl font-bold text-rise-deep mb-4">{researchMethods[1].title}</h2>
               <p className="text-gray-700 leading-relaxed text-lg text-justify">
                 {researchMethods[1].content}
               </p>

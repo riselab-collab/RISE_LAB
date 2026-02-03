@@ -81,7 +81,7 @@ const Positions = () => {
   return (
     <div className="min-h-screen bg-slate-50 font-sans text-slate-800">
       {/* Header */}
-      <div className="bg-white border-b border-gray-200 py-12 shadow-sm">
+      <div className="bg-white border-b border-rise-frost py-12 shadow-sm">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <h1 className="text-4xl font-bold text-slate-900 tracking-tight">Positions</h1>
         </div>
@@ -90,7 +90,7 @@ const Positions = () => {
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12 space-y-10">
 
         {/* INTRODUCTION */}
-        <div className="bg-gradient-to-r from-blue-50 to-indigo-50 border border-blue-100 p-8 rounded-2xl shadow-sm text-center">
+        <div className="bg-white border border-rise-frost p-8 rounded-2xl shadow-sm text-center">
           <p className="text-xl md:text-2xl font-medium text-slate-800 italic leading-relaxed">
             "We are looking for bright minds with a passion for both science and engineering. If you're eager to learn, solve problems, and turn cutting-edge research into real-world solutions, explore the opportunities below and join our innovative team."
           </p>
@@ -116,7 +116,7 @@ const Positions = () => {
           </ul>
           <div className="bg-indigo-50 p-4 rounded-lg border border-indigo-100">
             <p className="text-slate-800 font-medium">
-              Interested students may write to <a href="mailto:lava@iitrpr.ac.in" className="text-blue-600 underline hover:text-blue-800">lava@iitrpr.ac.in</a> with a detailed Curriculum Vitae, a research proposal (at least two pages), and a motivation letter.
+              Interested students may write to <a href="mailto:lava@iitrpr.ac.in" className="text-rise-ocean underline hover:text-rise-deep">lava@iitrpr.ac.in</a> with a detailed Curriculum Vitae, a research proposal (at least two pages), and a motivation letter.
             </p>
           </div>
         </PositionSection>

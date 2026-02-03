@@ -149,7 +149,7 @@ const Home = () => {
   }));
 
   return (
-    <div className="min-h-screen bg-slate-50 font-sans text-gray-800">
+    <div className="min-h-screen bg-white font-sans text-gray-800">
 
       {/* --- FIXED BACKGROUND IMAGE FOR MOTIVE SECTION --- */}
       {/* Activates only when heading enters, deactivates when section leaves */}
@@ -161,7 +161,7 @@ const Home = () => {
           alt="Motive Background"
           className="w-full h-full object-cover"
         />
-        <div className="absolute inset-0 bg-slate-900/80"></div>
+        <div className="absolute inset-0 bg-gray-900/80"></div>
       </div>
 
       {/* =========================================================================
@@ -182,25 +182,25 @@ const Home = () => {
                     className="w-full h-full object-cover"
                   />
                 </div>
-                <h2 className="text-2xl font-bold text-slate-900 mb-2">Dr. Avala Lavakumar</h2>
-                <p className="text-indigo-600 font-semibold mb-4">Assistant Professor</p>
+                <h2 className="text-2xl font-bold text-rise-deep mb-2">Dr. Avala Lavakumar</h2>
+                <p className="text-rise-ocean font-semibold mb-4">Assistant Professor</p>
 
-                <div className="space-y-3 text-sm text-slate-600 border-t border-gray-100 pt-6 text-left">
+                <div className="space-y-3 text-sm text-gray-600 border-t border-gray-100 pt-6 text-left">
                   <div className="flex items-start gap-3">
-                    <MapPin size={18} className="text-gray-400 mt-0.5 shrink-0" />
+                    <MapPin size={18} className="text-rise-ocean mt-0.5 shrink-0" />
                     <div>
-                      <p className="font-medium text-slate-800">Dept. of Metallurgical and Materials Eng.</p>
+                      <p className="font-medium text-gray-800">Dept. of Metallurgical and Materials Eng.</p>
                       <p>Indian Institute of Technology Ropar</p>
                       <p className="text-xs text-gray-500 mt-1">B-M05, Har Gobind Khorana Building</p>
                     </div>
                   </div>
                   <div className="flex items-center gap-3">
-                    <Mail size={18} className="text-gray-400 shrink-0" />
-                    <a href="mailto:lava@iitrpr.ac.in" className="hover:text-indigo-600 transition-colors">lava@iitrpr.ac.in</a>
+                    <Mail size={18} className="text-rise-ocean shrink-0" />
+                    <a href="mailto:lava@iitrpr.ac.in" className="hover:text-rise-ocean transition-colors">lava@iitrpr.ac.in</a>
                   </div>
                   <div className="flex items-center gap-3">
-                    <Phone size={18} className="text-gray-400 shrink-0" />
-                    <a href="tel:+911881232412" className="hover:text-indigo-600 transition-colors">+91-1881-23-2412</a>
+                    <Phone size={18} className="text-rise-ocean shrink-0" />
+                    <a href="tel:+911881232412" className="hover:text-rise-ocean transition-colors">+91-1881-23-2412</a>
                   </div>
                 </div>
               </div>
@@ -280,8 +280,8 @@ const Home = () => {
             >
               Motive & Vision
             </h2>
-            <div className="w-24 h-1.5 bg-yellow-400 mx-auto mb-10 rounded-full"></div>
-            <p className="text-xl md:text-2xl font-light leading-relaxed text-blue-50 max-w-4xl mx-auto drop-shadow-md">
+            <div className="w-24 h-1.5 bg-rise-ocean mx-auto mb-10 rounded-full"></div>
+            <p className="text-xl md:text-2xl font-light leading-relaxed text-rise-mist max-w-4xl mx-auto drop-shadow-md">
               Our lab is dedicated to pushing the boundaries of materials science through rigorous in-situ deformation studies and advanced microscopy. We aim to bridge the gap between fundamental research and real-world engineering applications, fostering innovation in both modern alloys and the understanding of ancient metallurgical heritage.
             </p>
             {/* SENTINEL FOR DEACTIVATION */}
@@ -296,8 +296,8 @@ const Home = () => {
       ========================================================================= */}
       <section className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-12 text-center">
-          <h2 className="text-3xl font-bold text-slate-900">Research Highlights</h2>
-          <div className="w-24 h-1 bg-indigo-500 mx-auto mt-4 rounded-full"></div>
+          <h2 className="text-3xl font-bold text-rise-deep">Research Highlights</h2>
+          <div className="w-24 h-1 bg-rise-ocean mx-auto mt-4 rounded-full"></div>
         </div>
 
         <div className="max-w-6xl mx-auto relative h-[450px] flex items-center justify-center px-4">
@@ -306,14 +306,14 @@ const Home = () => {
               {/* Controls */}
               <button
                 onClick={prevImage}
-                className="absolute left-4 md:left-8 z-20 p-2 rounded-full bg-white/80 text-indigo-900 shadow-md hover:bg-white transition-all disabled:opacity-50"
+                className="absolute left-4 md:left-8 z-20 p-2 rounded-full bg-white/90 text-rise-ocean shadow-sm border border-rise-frost hover:bg-rise-surf hover:text-white transition-all disabled:opacity-50"
                 aria-label="Previous Highlight"
               >
                 <ChevronLeft size={32} />
               </button>
               <button
                 onClick={nextImage}
-                className="absolute right-4 md:right-8 z-20 p-2 rounded-full bg-white/80 text-indigo-900 shadow-md hover:bg-white transition-all disabled:opacity-50"
+                className="absolute right-4 md:right-8 z-20 p-2 rounded-full bg-white/90 text-rise-ocean shadow-sm border border-rise-frost hover:bg-rise-surf hover:text-white transition-all disabled:opacity-50"
                 aria-label="Next Highlight"
               >
                 <ChevronRight size={32} />
@@ -351,9 +351,9 @@ const Home = () => {
       {/* =========================================================================
           SECTION 4: ABOUT US (Existing)
       ========================================================================= */}
-      <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 text-center md:text-left border-t border-gray-100">
-        <h2 className="text-3xl font-bold text-slate-900 inline-block border-b-4 border-indigo-500 pb-1 mb-10">About Us</h2>
-        <div className="prose prose-lg max-w-none text-slate-700 leading-loose text-justify space-y-8">
+      <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 text-center md:text-left border-t border-gray-100 bg-rise-mist rounded-3xl my-12 mx-auto shadow-sm">
+        <h2 className="text-3xl font-bold text-rise-deep inline-block border-b-4 border-rise-ocean pb-1 mb-10">About Us</h2>
+        <div className="prose prose-lg max-w-none text-gray-700 leading-loose text-justify space-y-8">
           <p>
             As researchers in the Department of Metallurgical and Materials Science Engineering at IIT Ropar, we focus on in-situ deformation studies. Utilizing techniques like transmission electron microscopy (TEM), synchrotron X-ray diffraction, and digital image correlation (DIC), we analyze structures and measure deformation across a diverse range of materials to address critical engineering challenges.
           </p>
@@ -372,10 +372,10 @@ const Home = () => {
       ========================================================================= */}
       <section className="py-16 bg-white border-t border-gray-100 shadow-inner">
         <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-3xl font-bold text-center text-slate-900 mb-12 flex items-center justify-center gap-3">
-            <span className="w-2 h-2 bg-indigo-600 rounded-full"></span>
+          <h2 className="text-3xl font-bold text-center text-rise-deep mb-12 flex items-center justify-center gap-3">
+            <span className="w-2 h-2 bg-rise-ocean rounded-full"></span>
             Latest News
-            <span className="w-2 h-2 bg-indigo-600 rounded-full"></span>
+            <span className="w-2 h-2 bg-rise-ocean rounded-full"></span>
           </h2>
 
           <div className="flex flex-col md:flex-row items-center gap-6">
@@ -383,14 +383,14 @@ const Home = () => {
             <div className="flex md:flex-col gap-2 order-2 md:order-1">
               <button
                 onClick={prevNews}
-                className="p-3 rounded-full bg-slate-100 text-indigo-600 hover:bg-indigo-50 transition-colors shadow-sm"
+                className="p-3 rounded-full bg-white border border-gray-200 text-rise-ocean hover:bg-gray-50 transition-colors shadow-sm"
                 aria-label="Previous News"
               >
                 <ChevronUp size={24} />
               </button>
               <button
                 onClick={nextNews}
-                className="p-3 rounded-full bg-slate-100 text-indigo-600 hover:bg-indigo-50 transition-colors shadow-sm"
+                className="p-3 rounded-full bg-white border border-gray-200 text-rise-ocean hover:bg-gray-50 transition-colors shadow-sm"
                 aria-label="Next News"
               >
                 <ChevronDown size={24} />
@@ -398,7 +398,7 @@ const Home = () => {
             </div>
 
             {/* News Display */}
-            <div className="relative flex-1 h-32 md:h-44 bg-white rounded-xl shadow-md border-l-4 border-indigo-500 flex items-center justify-center p-8 overflow-hidden order-1 md:order-2 w-full">
+            <div className="relative flex-1 h-32 md:h-44 bg-white rounded-xl shadow-md border-l-4 border-rise-ocean flex items-center justify-center p-8 overflow-hidden order-1 md:order-2 w-full">
               <AnimatePresence mode='wait'>
                 <motion.div
                   key={currentNewsIndex}
@@ -425,7 +425,7 @@ const Home = () => {
                   pauseNewsTicker();
                   setCurrentNewsIndex(idx);
                 }}
-                className={`h-2 rounded-full transition-all duration-300 ${idx === currentNewsIndex ? 'w-8 bg-indigo-600' : 'w-2 bg-gray-300 hover:bg-gray-400'}`}
+                className={`h-2 rounded-full transition-all duration-300 ${idx === currentNewsIndex ? 'w-8 bg-rise-ocean' : 'w-2 bg-gray-300 hover:bg-gray-400'}`}
                 aria-label={`Go to news item ${idx + 1}`}
               />
             ))}
