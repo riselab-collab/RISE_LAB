@@ -74,6 +74,13 @@ const Team = () => {
                 <h4 className="text-sm font-bold text-rise-deep uppercase tracking-wide mb-2">Research Interest</h4>
                 <p className="text-gray-700 leading-relaxed">{groupHead.interest}</p>
               </div>
+
+              {/* BOTTOM ACCENT WAVE */}
+              <div className="w-full mt-6 opacity-30 group-hover:opacity-60 transition-opacity duration-500">
+                <svg className="w-full h-3 text-orange-400 fill-none stroke-current stroke-[3]" viewBox="0 0 100 12" preserveAspectRatio="none">
+                  <path d="M0,6 C30,12 70,0 100,6" strokeLinecap="round" />
+                </svg>
+              </div>
             </div>
           </div>
         </section>
@@ -96,12 +103,20 @@ const Team = () => {
                 </div>
                 <div className="md:w-2/3">
                   <h3 className="text-2xl font-bold text-rise-deep mb-1">{staff.name}</h3>
-                  <p className="text-lg font-medium text-rise-ocean mb-2">{staff.role}</p>
+                  <p className="text-lg font-medium text-rise-ocean mb-4">{staff.role}</p>
+
                   <div className="mb-4">
                     <span className="font-bold text-rise-deep">Research area:</span>
                     <p className="text-gray-700 inline ml-2">{staff.area}</p>
                   </div>
                   <p className="text-gray-700 leading-relaxed text-justify">{staff.bio}</p>
+
+                  {/* BOTTOM ACCENT WAVE */}
+                  <div className="w-full mt-4 opacity-40 group-hover:opacity-70 transition-opacity duration-500">
+                    <svg className="w-full h-3 text-orange-400 fill-none stroke-current stroke-[3]" viewBox="0 0 100 12" preserveAspectRatio="none">
+                      <path d="M0,6 C30,12 70,0 100,6" strokeLinecap="round" />
+                    </svg>
+                  </div>
                 </div>
               </div>
             ))}
@@ -130,8 +145,8 @@ const Team = () => {
                   {/* Content Side */}
                   <div className={`w-full md:w-2/3 flex flex-col justify-center ${isEven ? 'md:text-left' : 'md:text-left'}`}>
                     <div className={`flex flex-col ${isEven ? 'items-start' : 'items-start'}`}> {/* Always align text left for readability */}
-                      <h3 className="text-3xl font-bold text-rise-deep mb-2">{student.name}</h3>
-                      <p className="text-xl font-medium text-rise-ocean mb-4">{student.role}</p>
+                      <h3 className="text-3xl font-bold text-rise-deep mb-1">{student.name}</h3>
+                      <p className="text-xl font-medium text-rise-ocean mb-6">{student.role}</p>
 
                       <div className="mb-4 bg-gray-50 px-4 py-2 rounded-lg border-l-4 border-rise-ocean w-full">
                         <span className="font-bold text-rise-deep text-sm uppercase tracking-wide">Research Area</span>
@@ -141,6 +156,13 @@ const Team = () => {
                       <p className="text-gray-700 leading-relaxed text-justify">
                         {student.bio}
                       </p>
+
+                      {/* BOTTOM ACCENT WAVE */}
+                      <div className="w-full mt-6 opacity-40 group-hover:opacity-70 transition-opacity duration-500">
+                        <svg className="w-full h-3 text-orange-400 fill-none stroke-current stroke-[3]" viewBox="0 0 100 12" preserveAspectRatio="none">
+                          <path d="M0,6 C30,12 70,0 100,6" strokeLinecap="round" />
+                        </svg>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -155,7 +177,7 @@ const Team = () => {
           {/* Grid Layout - Larger Cards */}
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-6">
             {btechStudents.map((student, idx) => (
-              <div key={idx} className="bg-white rounded-xl shadow-sm border border-rise-frost overflow-hidden flex flex-col h-full hover:shadow-md hover:border-rise-surf transition">
+              <div key={idx} className="bg-white rounded-xl shadow-sm border border-rise-frost overflow-hidden flex flex-col h-full hover:shadow-md hover:border-rise-surf transition group">
                 {/* Image Area */}
                 <div className="w-full aspect-square bg-gray-50 relative">
                   <img
@@ -168,9 +190,17 @@ const Team = () => {
                 <div className="p-5 flex flex-col flex-grow">
                   <h3 className="font-bold text-rise-deep text-lg mb-1">{student.name}</h3>
                   <p className="text-sm font-semibold text-gray-500 mb-3">{student.batch}</p>
+
                   <div className="mt-auto pt-3 border-t border-gray-100">
                     <span className="text-xs font-bold text-rise-ocean uppercase tracking-wide">Research area</span>
                     <p className="text-sm text-gray-700 mt-1 leading-snug">{student.area}</p>
+                  </div>
+
+                  {/* BOTTOM ACCENT WAVE */}
+                  <div className="w-full mt-3 opacity-40 group-hover:opacity-70 transition-opacity duration-500">
+                    <svg className="w-full h-2 text-orange-400 fill-none stroke-current stroke-[3]" viewBox="0 0 100 12" preserveAspectRatio="none">
+                      <path d="M0,6 C30,12 70,0 100,6" strokeLinecap="round" />
+                    </svg>
                   </div>
                 </div>
               </div>
@@ -184,7 +214,7 @@ const Team = () => {
           {/* Using similar Grid Layout as B.Tech for consistent visual size */}
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
             {alumni.map((member, idx) => (
-              <div key={idx} className="bg-white rounded-xl shadow-sm border border-rise-frost overflow-hidden flex flex-col h-full hover:shadow-md hover:border-rise-surf transition">
+              <div key={idx} className="bg-white rounded-xl shadow-sm border border-rise-frost overflow-hidden flex flex-col h-full hover:shadow-md hover:border-rise-surf transition group">
                 {/* Size: 1:1 Aspect ratio image */}
                 <div className="w-full aspect-square bg-gray-50 relative">
                   <img
@@ -196,6 +226,13 @@ const Team = () => {
                 <div className="p-4 flex flex-col flex-grow bg-white">
                   <span className="text-base font-bold text-rise-deep mb-1">{member.name}</span>
                   <span className="text-sm text-gray-600 italic mt-auto">{member.place}</span>
+
+                  {/* BOTTOM ACCENT WAVE */}
+                  <div className="w-full mt-2 opacity-40 group-hover:opacity-70 transition-opacity duration-500">
+                    <svg className="w-full h-2 text-orange-400 fill-none stroke-current stroke-[3]" viewBox="0 0 100 12" preserveAspectRatio="none">
+                      <path d="M0,6 C30,12 70,0 100,6" strokeLinecap="round" />
+                    </svg>
+                  </div>
                 </div>
               </div>
             ))}
