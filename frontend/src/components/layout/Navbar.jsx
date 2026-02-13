@@ -145,10 +145,10 @@ const Navbar = () => {
       ]
     },
     { name: 'Publications', path: '/publications' },
-    { name: 'Projects Funded', path: '/projects-funded' },
-    { name: 'Resources', path: '/teachings' }, // Renamed
+    { name: 'Projects Funding', path: '/projects-funded' },
+    { name: 'Resources', path: '/teachings' },
     { name: 'Positions', path: '/positions' },
-    { name: 'Equipment', path: '/equipment' }, // Added
+    { name: 'Equipment', path: '/equipment' },
     { name: 'Gallery', path: '/gallery' },
     { name: 'Contact Us', path: '/contact' },
   ];
@@ -165,86 +165,7 @@ const Navbar = () => {
 
   return (
     <>
-      {/* =========================================================================
-          PART 1: TOP HEADER (New)
-      ========================================================================= */}
-      <div className="bg-[#0B3446] border-b border-white/10 py-2 hidden md:block">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex justify-between items-center h-12">
 
-          {/* LEFT: Logo */}
-          <div className="flex items-center">
-            <img
-              src={getLogo()}
-              onError={(e) => {
-                e.target.onerror = null;
-                e.target.src = "https://placehold.co/150x50?text=LOGO"; // Fallback
-              }}
-              alt="Institute Logo"
-              className="h-10 w-auto object-contain mr-4"
-            />
-          </div>
-
-          {/* RIGHT: Socials, Email, Search */}
-          <div className="flex items-center gap-6">
-            {/* Social Icons */}
-            <div className="flex items-center gap-3 text-white">
-              <a href="#" className="hover:text-[#FF6600] transition-colors"><Linkedin size={18} /></a>
-              <a href="#" className="hover:text-[#FF6600] transition-colors"><Instagram size={18} /></a>
-              <a href="#" className="hover:text-[#FF6600] transition-colors"><Globe size={18} /></a>
-            </div>
-
-            {/* Email Button */}
-            <a href="mailto:lava@iitrpr.ac.in" className="flex items-center gap-2 bg-white/20 text-white px-3 py-1.5 rounded-full text-xs font-bold hover:bg-white/30 transition-colors">
-              <Mail size={14} /> Email Us
-            </a>
-
-            {/* Search Bar */}
-            <div className="relative">
-              <div className="flex items-center bg-white/10 border border-white/20 rounded-full px-3 py-1 focus-within:ring-2 focus-within:ring-rise-frost focus-within:border-transparent w-64 transition-all">
-                <input
-                  type="text"
-                  placeholder="Search site..."
-                  className="bg-transparent border-none outline-none text-sm w-full text-white placeholder-gray-300"
-                  value={searchQuery}
-                  onChange={(e) => setSearchQuery(e.target.value)}
-                  onFocus={() => setIsSearchFocused(true)}
-                  onBlur={() => setTimeout(() => setIsSearchFocused(false), 200)} // Delay for click handling
-                />
-                <button className="text-white hover:text-[#FF6600] transition-colors">
-                  <Search size={16} />
-                </button>
-              </div>
-
-              {/* Search Dropdown Results */}
-              <AnimatePresence>
-                {isSearchFocused && searchQuery && (
-                  <motion.div
-                    initial={{ opacity: 0, y: 10 }}
-                    animate={{ opacity: 1, y: 0 }}
-                    exit={{ opacity: 0, y: 10 }}
-                    className="absolute top-full right-0 mt-2 w-72 bg-white rounded-lg shadow-xl border border-gray-100 py-2 z-50 max-h-64 overflow-y-auto"
-                  >
-                    {filteredResults.length > 0 ? (
-                      filteredResults.map((result, idx) => (
-                        <div
-                          key={idx}
-                          className="px-4 py-2 hover:bg-blue-50 cursor-pointer text-sm text-gray-700 flex flex-col"
-                          onMouseDown={() => handleSearchNavigate(result.path)} // Changed to onMouseDown to fire before blur
-                        >
-                          <span className="font-medium">{result.title}</span>
-                          <span className="text-xs text-gray-400">{result.path}</span>
-                        </div>
-                      ))
-                    ) : (
-                      <div className="px-4 py-2 text-sm text-gray-400 text-center">No results found</div>
-                    )}
-                  </motion.div>
-                )}
-              </AnimatePresence>
-            </div>
-          </div>
-        </div>
-      </div>
 
       {/* =========================================================================
           PART 2: MAIN NAVIGATION (Updated)
@@ -253,10 +174,21 @@ const Navbar = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between h-20">
             {/* Logo/Title */}
-            <div className="flex items-center flex-shrink-0">
-              <Link to="/" className="flex flex-col">
-                <span className="text-2xl font-bold tracking-wide">RISE LAB</span>
-                <span className="text-xs font-light text-gray-300 tracking-wider">IIT ROPAR</span>
+            <div className="flex items-center flex-shrink-0 mr-6">
+              <Link to="/" className="flex items-center gap-3">
+                <img
+                  src={getLogo()}
+                  onError={(e) => {
+                    e.target.onerror = null;
+                    e.target.src = "https://placehold.co/150x50?text=LOGO";
+                  }}
+                  alt="Rise Lab Logo"
+                  className="h-12 w-auto object-contain bg-white/10 rounded-md p-1"
+                />
+                <div className="flex flex-col">
+                  <span className="text-2xl font-bold tracking-wide">RISE LAB</span>
+                  <span className="text-xs font-light text-gray-300 tracking-wider">IIT ROPAR</span>
+                </div>
               </Link>
             </div>
 
@@ -264,7 +196,7 @@ const Navbar = () => {
             <div className="hidden xl:flex items-center space-x-1">
               {links.map((link) => (
                 <div
-                  key={link.name}
+                  key={link.path}
                   className="relative group h-full flex items-center"
                   onMouseEnter={() => link.dropdown && setResearchDropdownOpen(true)}
                   onMouseLeave={() => link.dropdown && setResearchDropdownOpen(false)}
@@ -298,6 +230,59 @@ const Navbar = () => {
                   )}
                 </div>
               ))}
+            </div>
+
+            {/* Desktop Search (Hidden per request) */}
+            {/* <div className="hidden xl:flex items-center ml-4"> ... </div> */}
+            <div className="relative">
+              <button
+                onClick={() => setIsSearchFocused(!isSearchFocused)}
+                className="text-white hover:text-[#FF6600] transition-colors p-2"
+                aria-label="Search"
+              >
+                <Search size={20} />
+              </button>
+
+              {/* Search Overlay/Dropdown */}
+              <AnimatePresence>
+                {isSearchFocused && (
+                  <motion.div
+                    initial={{ opacity: 0, y: 10, scale: 0.95 }}
+                    animate={{ opacity: 1, y: 0, scale: 1 }}
+                    exit={{ opacity: 0, y: 10, scale: 0.95 }}
+                    className="absolute right-0 top-full mt-2 w-80 bg-white rounded-lg shadow-xl border border-gray-100 p-2 z-50"
+                  >
+                    <div className="flex items-center border-b border-gray-100 pb-2 mb-2">
+                      <Search size={16} className="text-gray-400 ml-2" />
+                      <input
+                        type="text"
+                        autoFocus
+                        placeholder="Search..."
+                        className="w-full px-3 py-1 outline-none text-gray-700 text-sm"
+                        value={searchQuery}
+                        onChange={(e) => setSearchQuery(e.target.value)}
+                        onBlur={() => !searchQuery && setTimeout(() => setIsSearchFocused(false), 200)}
+                      />
+                    </div>
+                    <div className="max-h-60 overflow-y-auto">
+                      {searchQuery && filteredResults.length > 0 ? (
+                        filteredResults.map((result, idx) => (
+                          <div
+                            key={idx}
+                            className="px-3 py-2 hover:bg-blue-50 cursor-pointer text-sm text-gray-700 flex flex-col rounded"
+                            onMouseDown={() => handleSearchNavigate(result.path)}
+                          >
+                            <span className="font-medium text-[#0B3446]">{result.title}</span>
+                            <span className="text-xs text-gray-400 truncate">{result.content.substring(0, 50)}...</span>
+                          </div>
+                        ))
+                      ) : searchQuery ? (
+                        <div className="px-3 py-2 text-sm text-gray-400 text-center">No results found</div>
+                      ) : null}
+                    </div>
+                  </motion.div>
+                )}
+              </AnimatePresence>
             </div>
 
             {/* Mobile Menu Button - Also includes Search Toggle for Mobile */}

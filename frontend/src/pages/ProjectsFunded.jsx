@@ -28,15 +28,14 @@ const ProjectsFunded = () => {
     }
   ];
 
-  /* Updated Project Card for Boxed Layout */
   const ProjectCard = ({ project }) => (
-    <div className="bg-white rounded-xl shadow-md p-8 border border-gray-100 hover:shadow-lg transition-all duration-300 transform hover:-translate-y-1">
-      <h3 className="text-xl font-bold text-rise-deep mb-3 leading-snug">
+    <div className="bg-white rounded-xl shadow-md p-6 border border-gray-100 hover:shadow-lg transition-all duration-300 transform hover:-translate-y-1">
+      <h3 className="text-xl font-bold text-[#0B3446] mb-3 leading-snug">
         {project.title}
       </h3>
 
       <div className="flex flex-col gap-1 sm:flex-row sm:items-center sm:gap-3 text-sm font-medium mb-3">
-        <span className="bg-rise-mist text-rise-ocean px-2 py-1 rounded border border-rise-frost">
+        <span className="bg-gray-100 text-[#FF6600] px-2 py-1 rounded border border-gray-200">
           Principal Investigator (P.I)
         </span>
         <span className="text-gray-500 hidden sm:inline">•</span>
@@ -55,40 +54,35 @@ const ProjectsFunded = () => {
   );
 
   return (
-    <div className="min-h-screen bg-gray-50 font-sans text-gray-800">
-      {/* Header */}
-      <div className="bg-white border-b border-rise-frost py-10">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h1 className="text-4xl font-bold text-rise-deep tracking-tight">Projects Funded</h1>
+    <div className="min-h-screen bg-white font-sans text-gray-800 py-12">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="bg-[#B8B8B8] rounded-2xl shadow-md p-8 md:p-12">
+
+          {/* Section 1: Sponsored Projects */}
+          <section className="mb-12">
+            <h2 className="text-3xl font-bold text-[#FF6600] mb-8 border-b-2 border-[#FF6600] inline-block pb-2">
+              Sponsored Projects
+            </h2>
+            <div className="grid grid-cols-1 gap-6">
+              {sponsoredProjects.map((project, index) => (
+                <ProjectCard key={index} project={project} />
+              ))}
+            </div>
+          </section>
+
+          {/* Section 2: Consultancy Projects */}
+          <section>
+            <h2 className="text-3xl font-bold text-[#FF6600] mb-8 border-b-2 border-[#FF6600] inline-block pb-2">
+              Consultancy Projects
+            </h2>
+            <div className="grid grid-cols-1 gap-6">
+              {consultancyProjects.map((project, index) => (
+                <ProjectCard key={index} project={project} />
+              ))}
+            </div>
+          </section>
+
         </div>
-      </div>
-
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 space-y-12">
-
-        {/* Section 1: Sponsored Projects */}
-        <section>
-          <h2 className="text-2xl font-bold text-rise-deep border-l-4 border-rise-ocean pl-3 mb-6 uppercase">
-            Sponsored Projects
-          </h2>
-          <div className="flex flex-col gap-6">
-            {sponsoredProjects.map((project, index) => (
-              <ProjectCard key={index} project={project} />
-            ))}
-          </div>
-        </section>
-
-        {/* Section 2: Consultancy Projects */}
-        <section>
-          <h2 className="text-2xl font-bold text-rise-deep border-l-4 border-rise-ocean pl-3 mb-6 uppercase">
-            Consultancy Projects
-          </h2>
-          <div className="flex flex-col gap-6">
-            {consultancyProjects.map((project, index) => (
-              <ProjectCard key={index} project={project} />
-            ))}
-          </div>
-        </section>
-
       </div>
     </div>
   );

@@ -16,7 +16,7 @@ const Footer = () => {
               <li><Link to="/team" className="hover:text-[#FF6600] transition-colors">Team</Link></li>
               <li><Link to="/research" className="hover:text-[#FF6600] transition-colors">Research</Link></li>
               <li><Link to="/publications" className="hover:text-[#FF6600] transition-colors">Publications</Link></li>
-              <li><Link to="/projects-funded" className="hover:text-[#FF6600] transition-colors">Projects Funded</Link></li>
+              <li><Link to="/projects-funded" className="hover:text-[#FF6600] transition-colors">Projects Funding</Link></li>
               <li><Link to="/teachings" className="hover:text-[#FF6600] transition-colors">Resources</Link></li>
               <li><Link to="/positions" className="hover:text-[#FF6600] transition-colors">Positions</Link></li>
               <li><Link to="/equipment" className="hover:text-[#FF6600] transition-colors">Equipment</Link></li>

@@ -23,9 +23,22 @@ const Home = () => {
   const [currentNewsIndex, setCurrentNewsIndex] = useState(0);
 
   // Motive Section Scroll Reveal (using react-intersection-observer)
-  const { ref: motiveSectionRef, inView: isMotiveActive } = useInView({ threshold: 0.2 });
-  const { ref: motiveHeadingRef, inView: isHeadingVisible } = useInView({ threshold: 0.5, triggerOnce: true }); // isHeadingVisible not used, but kept for consistency if needed later
-  const { ref: motiveEndRef, inView: isMotiveEnd } = useInView({ threshold: 0.1 }); // isMotiveEnd not used, but kept for consistency if needed later
+  const { ref: motiveSectionRef, inView: isSectionActive } = useInView({ threshold: 0.1 });
+  const { ref: motiveTextRef, inView: isTextActive } = useInView({
+    threshold: 0.05,
+    rootMargin: "-80px 0px 0px 0px",
+    triggerOnce: false
+  });
+
+  // Logic: Active if text is in view OR if it was active and we are still in section? 
+  // User said: "Background image must appear ONLY when this paragraph enters ... Keep current closing logic"
+  // Current closing logic was: based on section visibility.
+  // Let's make it: Visible if isTextActive is true. 
+  // Wait, if text leaves, bg might disappear. 
+  // Let's stick to the user's specific request: "Trigger only when this text block becomes visible."
+  // If "Keep current closing logic" means "don't change how it generally works", then maybe just the trigger.
+  // I will use isTextActive to drive the opacity.
+  const isMotiveActive = isTextActive;
 
 
   // --- 3. Effects ---
@@ -183,6 +196,11 @@ const Home = () => {
                     In contrast to this modern approach, we also delve into archaeometallurgy, analyzing ancient metal artifacts and techniques to understand the evolution of metals and their properties.
                   </p>
                 </div>
+
+                {/* Signature */}
+                <div className="mt-8 flex justify-end">
+                  <img src="../assets/signature.svg" alt="Signature" className="h-12 w-auto opacity-80" />
+                </div>
               </div>
             </div>
 
@@ -262,17 +280,14 @@ const Home = () => {
             transition={{ duration: 0.8, delay: 0.2 }}
           >
             <h2
-              ref={motiveHeadingRef}
               className="text-4xl md:text-5xl font-bold mb-8 text-white tracking-tight leading-tight"
             >
               Motive & Vision
             </h2>
             <div className="w-24 h-1.5 bg-[#FF6600] mx-auto mb-10 rounded-full"></div>
-            <p className="text-xl md:text-2xl font-light leading-relaxed text-gray-100 max-w-4xl mx-auto drop-shadow-md">
+            <p ref={motiveTextRef} className="text-xl md:text-2xl font-light leading-relaxed text-gray-100 max-w-4xl mx-auto drop-shadow-md">
               Our lab is dedicated to pushing the boundaries of materials science through rigorous in-situ deformation studies and advanced microscopy. We aim to bridge the gap between fundamental research and real-world engineering applications, fostering innovation in both modern alloys and the understanding of ancient metallurgical heritage.
             </p>
-            {/* SENTINEL FOR DEACTIVATION */}
-            <div ref={motiveEndRef} className="h-px w-full bg-transparent mt-0 pointer-events-none opacity-0"></div>
           </motion.div>
         </div>
       </section>

@@ -265,51 +265,51 @@ const Teachings = () => {
   };
 
   return (
-    <div className="min-h-screen bg-white font-sans text-gray-800">
-      {/* Header */}
-      <div className="bg-white border-b border-gray-200 py-16 shadow-sm relative overflow-hidden">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-          <h1 className="text-5xl font-extrabold text-rise-deep tracking-tight mb-3">Lecture Notes</h1>
-          <p className="text-xl text-gray-500 max-w-2xl font-light">Comprehensive course materials, presentations, and reference documents.</p>
+    <div className="min-h-screen bg-white font-sans text-gray-800 py-12">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="bg-[#B8B8B8] rounded-2xl shadow-md p-8 md:p-12">
+
+          <h2 className="text-3xl font-bold text-[#FF6600] mb-2 tracking-tight">Lecture Notes</h2>
+          <p className="text-xl text-gray-800 max-w-2xl font-light mb-10">Comprehensive course materials, presentations, and reference documents.</p>
+
+          <div className="space-y-10">
+            {/* Section 1: Physical Metallurgy */}
+            <TeachingSection
+              title="Physical Metallurgy"
+              subtitle="Materials Science & Engineering"
+              items={physicalMetallurgy}
+              themeIndex={0}
+            />
+
+            {/* Section 2: Heat Treatment */}
+            <TeachingSection
+              title="Heat Treatment"
+              items={heatTreatment}
+              themeIndex={1}
+            />
+
+            {/* Section 3: Phase Transformations */}
+            <TeachingSection
+              title="Phase Transformations"
+              items={phaseTransformations}
+              themeIndex={2}
+            />
+
+            {/* Section 4: Electron Microscopy */}
+            <TeachingSection
+              title="Electron Microscopy and Microanalysis"
+              items={electronMicroscopy}
+              themeIndex={3}
+            />
+
+            {/* Section 5: Laboratory Workbooks */}
+            <TeachingSection
+              title="Laboratory Workbooks"
+              items={labWorkbooks}
+              themeIndex={4}
+            />
+          </div>
         </div>
-      </div>
-
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 space-y-10">
-        {/* Section 1: Indigo */}
-        <TeachingSection
-          title="Physical Metallurgy"
-          subtitle="Materials Science & Engineering"
-          items={physicalMetallurgy}
-          themeIndex={0}
-        />
-
-        {/* Section 2: Teal */}
-        <TeachingSection
-          title="Heat Treatment"
-          items={heatTreatment}
-          themeIndex={1}
-        />
-
-        {/* Section 3: Amber */}
-        <TeachingSection
-          title="Phase Transformations"
-          items={phaseTransformations}
-          themeIndex={2}
-        />
-
-        {/* Section 4: Emerald */}
-        <TeachingSection
-          title="Electron Microscopy and Microanalysis"
-          items={electronMicroscopy}
-          themeIndex={3}
-        />
-
-        {/* Section 5: Cyan */}
-        <TeachingSection
-          title="Laboratory Workbooks"
-          items={labWorkbooks}
-          themeIndex={4}
-        />
       </div>
     </div>
   );
