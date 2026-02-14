@@ -58,7 +58,7 @@ const Gallery = () => {
   return (
     <div className="min-h-screen bg-white font-sans text-gray-800 py-12">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="bg-[#CCCCCC] rounded-2xl shadow-md p-8 md:p-12 min-h-[600px]">
+        <div className="bg-[#F5F5F5] rounded-2xl shadow-md p-8 md:p-12 min-h-[600px]">
 
           <div className="flex flex-col gap-6">
             {CATEGORIES.map(cat => {
@@ -95,7 +95,7 @@ const Gallery = () => {
                       </div>
 
                       <div>
-                        <h3 className={`text-xl font-bold ${isOpen ? 'text-[#FF6600]' : 'text-[#0B3446]'}`}>{cat.title}</h3>
+                        <h3 className={`text-xl font-bold ${isOpen ? 'text-[#FF6600]' : 'text-[#0B5472]'}`}>{cat.title}</h3>
                         <p className="text-sm text-gray-500">{cat.description}</p>
                       </div>
                     </div>

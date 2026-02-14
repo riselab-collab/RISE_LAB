@@ -73,7 +73,7 @@ const EquipmentRequestModal = ({ isOpen, onClose, equipmentList = [], defaultEqu
                   <input
                     type="text"
                     required
-                    className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-blue-500 transition-shadow outline-none"
+                    className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-[#0B5472] transition-shadow outline-none"
                     placeholder="Researcher Name"
                     value={formData.name}
                     onChange={(e) => setFormData({ ...formData, name: e.target.value })}
@@ -85,7 +85,7 @@ const EquipmentRequestModal = ({ isOpen, onClose, equipmentList = [], defaultEqu
                   <input
                     type="email"
                     required
-                    className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-blue-500 transition-shadow outline-none"
+                    className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-[#0B5472] transition-shadow outline-none"
                     placeholder="researcher@iitrpr.ac.in"
                     value={formData.email}
                     onChange={(e) => setFormData({ ...formData, email: e.target.value })}
@@ -96,7 +96,7 @@ const EquipmentRequestModal = ({ isOpen, onClose, equipmentList = [], defaultEqu
                   <div className="col-span-2">
                     <label className="block text-sm font-medium text-slate-700 mb-1">Equipment</label>
                     <select
-                      className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-blue-500 transition-shadow outline-none bg-white"
+                      className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-[#0B5472] transition-shadow outline-none bg-white"
                       value={formData.equipment}
                       onChange={(e) => setFormData({ ...formData, equipment: e.target.value })}
                       required
@@ -116,7 +116,7 @@ const EquipmentRequestModal = ({ isOpen, onClose, equipmentList = [], defaultEqu
                       <input
                         type="date"
                         required
-                        className="w-full pl-10 pr-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-blue-500 transition-shadow outline-none"
+                        className="w-full pl-10 pr-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-[#0B5472] transition-shadow outline-none"
                         value={formData.date}
                         onChange={(e) => setFormData({ ...formData, date: e.target.value })}
                       />
@@ -129,7 +129,7 @@ const EquipmentRequestModal = ({ isOpen, onClose, equipmentList = [], defaultEqu
                   <textarea
                     rows="3"
                     required
-                    className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-blue-500 transition-shadow outline-none resize-none"
+                    className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-[#0B5472] transition-shadow outline-none resize-none"
                     placeholder="Briefly describe your experiment..."
                     value={formData.purpose}
                     onChange={(e) => setFormData({ ...formData, purpose: e.target.value })}
@@ -140,7 +140,7 @@ const EquipmentRequestModal = ({ isOpen, onClose, equipmentList = [], defaultEqu
                   <button
                     type="submit"
                     disabled={isSubmitting}
-                    className="w-full flex items-center justify-center gap-2 bg-blue-700 hover:bg-blue-800 text-white font-bold py-3 rounded-xl transition-all shadow-lg hover:shadow-blue-500/30 disabled:opacity-70"
+                    className="w-full flex items-center justify-center gap-2 bg-[#0B5472] hover:bg-[#094660] text-white font-bold py-3 rounded-xl transition-all shadow-lg hover:shadow-cyan-500/30 disabled:opacity-70"
                   >
                     {isSubmitting ? (
                       <span className="animate-pulse">Submitting...</span>

@@ -170,7 +170,7 @@ const Navbar = () => {
       {/* =========================================================================
           PART 2: MAIN NAVIGATION (Updated)
       ========================================================================= */}
-      <nav className="bg-[#0B3446] text-white shadow-md sticky top-0 z-40">
+      <nav className="bg-[#0B5472] text-white shadow-md sticky top-0 z-40">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between h-20">
             {/* Logo/Title */}
@@ -272,7 +272,7 @@ const Navbar = () => {
                             className="px-3 py-2 hover:bg-blue-50 cursor-pointer text-sm text-gray-700 flex flex-col rounded"
                             onMouseDown={() => handleSearchNavigate(result.path)}
                           >
-                            <span className="font-medium text-[#0B3446]">{result.title}</span>
+                            <span className="font-medium text-[#0B5472]">{result.title}</span>
                             <span className="text-xs text-gray-400 truncate">{result.content.substring(0, 50)}...</span>
                           </div>
                         ))
@@ -305,7 +305,7 @@ const Navbar = () => {
 
         {/* Mobile Menu */}
         {isOpen && (
-          <div className="xl:hidden bg-[#186F97] border-t border-white/20">
+          <div className="xl:hidden bg-[#0B5472] border-t border-white/20">
             <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
               {/* Mobile Search Input */}
               <div className="px-3 pb-2">

@@ -15,7 +15,7 @@ const About = () => {
 
         {/* Vision & Mission */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-          <div className="bg-white rounded-lg shadow-md p-8 border-l-4 border-blue-900">
+          <div className="bg-white rounded-lg shadow-md p-8 border-l-4 border-[#0B5472]">
             <h2 className="text-2xl font-bold text-gray-900 mb-4">Our Vision</h2>
             <p className="text-gray-600 leading-relaxed">
               To be a global leader in intelligent systems research, fostering innovation that bridges theoretical computer science with practical engineering solutions for societal impact.

@@ -50,7 +50,7 @@ const Publications = () => {
   return (
     <div className="min-h-screen bg-white font-sans text-gray-800 py-12">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="bg-[#CCCCCC] rounded-2xl shadow-md p-8 md:p-12">
+        <div className="bg-[#F5F5F5] rounded-2xl shadow-md p-8 md:p-12">
 
           {/* --- SECTION 2: BOOK(S) --- */}
           <section className="mb-12">
@@ -66,7 +66,7 @@ const Publications = () => {
                   href="https://doi.org/10.1088/978-1-6817-4473-5"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="italic text-[#0E4057] hover:underline font-medium"
+                  className="italic text-[#0B5472] hover:underline font-medium"
                 >
                   Concepts in Physical Metallurgy: Concise Lecture Notes,
                 </a>{' '}

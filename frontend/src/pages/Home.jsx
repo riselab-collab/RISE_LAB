@@ -157,7 +157,7 @@ const Home = () => {
                     className="w-full h-full object-cover"
                   />
                 </div>
-                <h2 className="text-3xl font-bold text-[#0E4057] mb-2">Dr. Avala Lavakumar</h2>
+                <h2 className="text-3xl font-bold text-[#0B5472] mb-2">Dr. Avala Lavakumar</h2>
                 <p className="text-[#FF6600] font-semibold text-lg mb-4">Assistant Professor</p>
 
                 <div className="space-y-4 text-sm text-gray-700 border-t border-gray-100 pt-6 text-left">
@@ -183,7 +183,7 @@ const Home = () => {
 
             {/* RIGHT: ABOUT US (New Box Layout) */}
             <div className="w-full lg:w-[65%] min-h-[500px] flex flex-col justify-center">
-              <div className="bg-[#CCCCCC] rounded-2xl shadow-md p-10 h-full flex flex-col justify-center">
+              <div className="bg-[#F5F5F5] rounded-2xl shadow-md p-10 h-full flex flex-col justify-center">
                 <h2 className="text-3xl font-bold text-[#FF6600] mb-6 inline-block">About Us</h2>
                 <div className="text-black text-lg leading-relaxed text-justify space-y-6">
                   <p>
@@ -213,7 +213,7 @@ const Home = () => {
       ========================================================================= */}
       <section className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-12 text-center">
-          <h2 className="text-3xl font-bold text-[#0E4057]">Research Highlights</h2>
+          <h2 className="text-3xl font-bold text-[#0B5472]">Research Highlights</h2>
           <div className="w-24 h-1 bg-[#FF6600] mx-auto mt-4 rounded-full"></div>
         </div>
 
@@ -223,14 +223,14 @@ const Home = () => {
               {/* Controls */}
               <button
                 onClick={prevImage}
-                className="absolute left-4 md:left-8 z-20 p-2 rounded-full bg-white/90 text-[#0E4057] shadow-sm border border-gray-200 hover:bg-[#0E4057] hover:text-white transition-all disabled:opacity-50"
+                className="absolute left-4 md:left-8 z-20 p-2 rounded-full bg-white/90 text-[#0B5472] shadow-sm border border-gray-200 hover:bg-[#0B5472] hover:text-white transition-all disabled:opacity-50"
                 aria-label="Previous Highlight"
               >
                 <ChevronLeft size={32} />
               </button>
               <button
                 onClick={nextImage}
-                className="absolute right-4 md:right-8 z-20 p-2 rounded-full bg-white/90 text-[#0E4057] shadow-sm border border-gray-200 hover:bg-[#0E4057] hover:text-white transition-all disabled:opacity-50"
+                className="absolute right-4 md:right-8 z-20 p-2 rounded-full bg-white/90 text-[#0B5472] shadow-sm border border-gray-200 hover:bg-[#0B5472] hover:text-white transition-all disabled:opacity-50"
                 aria-label="Next Highlight"
               >
                 <ChevronRight size={32} />
@@ -298,7 +298,7 @@ const Home = () => {
       ========================================================================= */}
       <section className="py-16 bg-white border-t border-gray-100 shadow-inner">
         <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-3xl font-bold text-center text-[#0E4057] mb-12 flex items-center justify-center gap-3">
+          <h2 className="text-3xl font-bold text-center text-[#0B5472] mb-12 flex items-center justify-center gap-3">
             <span className="w-2 h-2 bg-[#FF6600] rounded-full"></span>
             Latest News
             <span className="w-2 h-2 bg-[#FF6600] rounded-full"></span>
@@ -309,14 +309,14 @@ const Home = () => {
             <div className="flex md:flex-col gap-2 order-2 md:order-1">
               <button
                 onClick={prevNews}
-                className="p-3 rounded-full bg-white border border-gray-200 text-[#0E4057] hover:bg-gray-50 transition-colors shadow-sm"
+                className="p-3 rounded-full bg-white border border-gray-200 text-[#0B5472] hover:bg-gray-50 transition-colors shadow-sm"
                 aria-label="Previous News"
               >
                 <ChevronUp size={24} />
               </button>
               <button
                 onClick={nextNews}
-                className="p-3 rounded-full bg-white border border-gray-200 text-[#0E4057] hover:bg-gray-50 transition-colors shadow-sm"
+                className="p-3 rounded-full bg-white border border-gray-200 text-[#0B5472] hover:bg-gray-50 transition-colors shadow-sm"
                 aria-label="Next News"
               >
                 <ChevronDown size={24} />

@@ -4,7 +4,7 @@ import { Server, Wifi, Cpu, Layers } from 'lucide-react';
 const Facilities = () => {
   const facilitiesList = [
     {
-      icon: <Server size={32} className="text-blue-600" />,
+      icon: <Server size={32} className="text-[#0B5472]" />,
       title: "High Performance Computing Cluster",
       description: "A dedicated GPU cluster for deep learning training and large-scale data processing tasks."
     },

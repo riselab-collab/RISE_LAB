@@ -30,7 +30,7 @@ const ProjectsFunded = () => {
 
   const ProjectCard = ({ project }) => (
     <div className="bg-white rounded-xl shadow-md p-6 border border-gray-100 hover:shadow-lg transition-all duration-300 transform hover:-translate-y-1">
-      <h3 className="text-xl font-bold text-[#0B3446] mb-3 leading-snug">
+      <h3 className="text-xl font-bold text-[#0B5472] mb-3 leading-snug">
         {project.title}
       </h3>
 
@@ -56,7 +56,7 @@ const ProjectsFunded = () => {
   return (
     <div className="min-h-screen bg-white font-sans text-gray-800 py-12">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="bg-[#CCCCCC] rounded-2xl shadow-md p-8 md:p-12">
+        <div className="bg-[#F5F5F5] rounded-2xl shadow-md p-8 md:p-12">
 
           {/* Section 1: Sponsored Projects */}
           <section className="mb-12">
