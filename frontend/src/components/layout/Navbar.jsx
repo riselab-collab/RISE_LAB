@@ -234,7 +234,7 @@ const Navbar = () => {
 
             {/* Desktop Search (Hidden per request) */}
             {/* <div className="hidden xl:flex items-center ml-4"> ... </div> */}
-            <div className="relative">
+            <div className="relative flex items-center h-full ml-1">
               <button
                 onClick={() => setIsSearchFocused(!isSearchFocused)}
                 className="text-white hover:text-[#FF6600] transition-colors p-2"
