@@ -183,7 +183,7 @@ const Home = () => {
 
             {/* RIGHT: ABOUT US (New Box Layout) */}
             <div className="w-full lg:w-[65%] min-h-[500px] flex flex-col justify-center">
-              <div className="bg-[#B8B8B8] rounded-2xl shadow-md p-10 h-full flex flex-col justify-center">
+              <div className="bg-[#CCCCCC] rounded-2xl shadow-md p-10 h-full flex flex-col justify-center">
                 <h2 className="text-3xl font-bold text-[#FF6600] mb-6 inline-block">About Us</h2>
                 <div className="text-black text-lg leading-relaxed text-justify space-y-6">
                   <p>

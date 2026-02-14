@@ -81,7 +81,7 @@ const Positions = () => {
   return (
     <div className="min-h-screen bg-white font-sans text-slate-800 py-12">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="bg-[#B8B8B8] rounded-2xl shadow-md p-8 md:p-12">
+        <div className="bg-[#CCCCCC] rounded-2xl shadow-md p-8 md:p-12">
 
           <div className="max-w-5xl mx-auto space-y-10">
             {/* INTRODUCTION */}
