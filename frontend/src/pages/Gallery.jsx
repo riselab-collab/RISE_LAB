@@ -12,40 +12,36 @@ const getGalleryImage = (filename) => {
 
 // --- DATA STRUCTURE ---
 const CATEGORIES = [
-  { id: 'conferences', title: 'Conferences', description: 'Presentations and gatherings at top venues.' },
-  { id: 'lectures', title: 'Lecture & Talks', description: 'Invited talks and knowledge sharing sessions.' },
-  { id: 'lab', title: 'Academic Engagements', description: 'Fostering connections, knowledge exchange, and expert interactions.' },
-  { id: 'events', title: 'Events & Ceremonies', description: 'Awards, grants, and celebrations.' },
-  { id: 'interns', title: 'Interns & Students', description: 'Retreats, farewells, and student life.' },
-  { id: 'lab_activities', title: 'Lab Activities', description: 'People working inside lab environment.' },
-  { id: 'group_discussions', title: 'Group Discussions & Meetings', description: 'Discussing research and sharing ideas.' },
-  { id: 'team_culture', title: 'Life at RISE', description: 'Casual team moments.' },
+  { id: 'conferences_lectures_talks', title: 'Conferences, Lectures & Talks', description: 'Presentations, gatherings at top venues, and invited sharing sessions.' },
+  { id: 'rise_lab_activities', title: 'RISE Lab Activities', description: 'People working inside lab environment.' },
+  { id: 'events_ceremonies', title: 'Events & Ceremonies', description: 'Awards, grants, and celebrations.' },
+  { id: 'rise_discussions_meetings', title: 'RISE Discussions & Meetings', description: 'Discussing research and sharing ideas.' },
+  { id: 'life_at_rise', title: 'Life at RISE', description: 'Casual team moments, retreats, and student life.' },
 ];
 
 const GALLERY_ITEMS = [
-  { id: 1, category: 'events', image: "gallery1.jpg", caption: "Receiving Project Grant by the Honourable ministers at the launch of Critical Mineral Blocks auction, Delhi (June 2024)" },
-  { id: 2, category: 'conferences', image: "gallery2.jpg", caption: "Dr. Avala Lavakumar presenting at the IIM conference" },
-  { id: 3, category: 'lab', image: "gallery3.jpg", caption: "Discussion with Prof. T. Suji in the lab" },
-  { id: 4, category: 'conferences', image: "gallery4.jpg", caption: "RISE Lab researchers at IIM-ATM 2024" },
-  { id: 5, category: 'lectures', image: "gallery5.jpg", caption: "Invited Lecture at the 20th IMC, Republic of Korea" },
-  { id: 6, category: 'interns', image: "gallery6.jpg", caption: "Interns Academic Retreat - A day of learning and fun" },
-  { id: 7, category: 'conferences', image: "gallery7.jpg", caption: "ICAMSD 2025, MNIT Jaipur participation" },
-  { id: 8, category: 'conferences', image: "gallery8.jpg", caption: "IMRC 2025 Conference Highlights" },
-  { id: 9, category: 'lab', image: "gallery9.jpg", caption: "Sharing RISE Lab teaching material with Professor Rajesh Prasad" },
-  { id: 10, category: 'interns', image: "gallery10.jpg", caption: "Farewell to Mr. Arun - Wishing him the best!" },
+  { id: 1, category: 'events_ceremonies', image: "gallery1.jpg", caption: "Receiving Project Grant by the Honourable ministers at the launch of Critical Mineral Blocks auction, Delhi (June 2024)" },
+  { id: 2, category: 'conferences_lectures_talks', image: "gallery2.jpg", caption: "Dr. Avala Lavakumar presenting at the IIM conference" },
+  { id: 3, category: 'conferences_lectures_talks', image: "gallery3.jpg", caption: "Discussion with Prof. T. Suji in the lab" },
+  { id: 4, category: 'conferences_lectures_talks', image: "gallery4.jpg", caption: "RISE Lab researchers at IIM-ATM 2024" },
+  { id: 5, category: 'conferences_lectures_talks', image: "gallery5.jpg", caption: "Invited Lecture at the 20th IMC, Republic of Korea" },
+  { id: 6, category: 'life_at_rise', image: "gallery6.jpg", caption: "Interns Academic Retreat - A day of learning and fun" },
+  { id: 7, category: 'conferences_lectures_talks', image: "gallery7.jpg", caption: "ICAMSD 2025, MNIT Jaipur participation" },
+  { id: 8, category: 'conferences_lectures_talks', image: "gallery8.jpg", caption: "IMRC 2025 Conference Highlights" },
+  { id: 9, category: 'conferences_lectures_talks', image: "gallery9.jpg", caption: "Sharing RISE Lab teaching material with Professor Rajesh Prasad" },
+  { id: 10, category: 'life_at_rise', image: "gallery10.jpg", caption: "Farewell to Mr. Arun - Wishing him the best!" },
 
-  // --- NEW SECTIONS ---
   // Lab Activities
-  { id: 11, category: 'lab_activities', image: "gallery_lab_1.jpg", caption: "Researchers conducting experiments in the lab" },
-  { id: 12, category: 'lab_activities', image: "gallery_lab_2.jpg", caption: "Researcher working on software in the lab" },
+  { id: 11, category: 'rise_lab_activities', image: "gallery_lab_1.jpg", caption: "Researchers conducting experiments in the lab" },
+  { id: 12, category: 'rise_lab_activities', image: "gallery_lab_2.jpg", caption: "Researcher working on software in the lab" },
 
   // Group Discussions
-  { id: 13, category: 'group_discussions', image: "gallery_discussion_1.jpg", caption: "Weekly research group meeting and updates" },
-  { id: 14, category: 'group_discussions', image: "gallery_discussion_2.jpg", caption: "Presentation on recent findings" },
+  { id: 13, category: 'rise_discussions_meetings', image: "gallery_discussion_1.jpg", caption: "Weekly research group meeting and updates" },
+  { id: 14, category: 'rise_discussions_meetings', image: "gallery_discussion_2.jpg", caption: "Presentation on recent findings" },
 
   // Team Culture
-  { id: 15, category: 'team_culture', image: "gallery_culture_1.jpg", caption: "Celebrating team milestones together" },
-  { id: 16, category: 'team_culture', image: "gallery_culture_2.jpg", caption: "Informal team gathering" }
+  { id: 15, category: 'life_at_rise', image: "gallery_culture_1.jpg", caption: "Celebrating team milestones together" },
+  { id: 16, category: 'life_at_rise', image: "gallery_culture_2.jpg", caption: "Informal team gathering" }
 ];
 
 const Gallery = () => {

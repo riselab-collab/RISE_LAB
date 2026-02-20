@@ -192,15 +192,10 @@ const Team = () => {
 
                 <div className="p-5 flex flex-col flex-grow">
                   <h3 className="font-bold text-[#0B5472] text-lg mb-1">{student.name}</h3>
-                  <p className="text-sm font-semibold text-gray-700 mb-3">{student.batch}</p>
-
-                  <div className="mt-auto pt-3 border-t border-gray-300">
-                    <span className="text-xs font-bold text-[#FF6600] uppercase tracking-wide">Research area</span>
-                    <p className="text-sm text-black mt-1 leading-snug">{student.area}</p>
-                  </div>
+                  <p className="text-sm font-semibold text-gray-700">{student.timeline}</p>
 
                   {/* BOTTOM ACCENT WAVE */}
-                  <div className="w-full mt-3 opacity-40 group-hover:opacity-70 transition-opacity duration-500">
+                  <div className="w-full mt-auto pt-4 opacity-40 group-hover:opacity-70 transition-opacity duration-500">
                     <svg className="w-full h-2 text-orange-400 fill-none stroke-current stroke-[3]" viewBox="0 0 100 12" preserveAspectRatio="none">
                       <path d="M0,6 C30,12 70,0 100,6" strokeLinecap="round" />
                     </svg>
@@ -211,7 +206,7 @@ const Team = () => {
           </div>
         </section>
 
-        {/* --- SECTION 5: ALUMINI --- */}
+        {/* --- SECTION 5: ALUMNI --- */}
         <section>
           <h2 className="text-2xl font-bold text-[#0B5472] border-l-4 border-rise-ocean pl-3 mb-8 uppercase">Alumni / Associated Members</h2>
           {/* Using similar Grid Layout as B.Tech for consistent visual size */}
@@ -226,12 +221,12 @@ const Team = () => {
                     className="absolute inset-0 w-full h-full object-cover object-center"
                   />
                 </div>
-                <div className="p-4 flex flex-col flex-grow bg-[#F5F5F5]">
+                <div className="p-5 flex flex-col flex-grow bg-[#F5F5F5]">
                   <span className="text-base font-bold text-[#0B5472] mb-1">{member.name}</span>
-                  <span className="text-sm text-black italic mt-auto">{member.place}</span>
+                  <span className="text-sm text-black italic">{member.timeline}</span>
 
                   {/* BOTTOM ACCENT WAVE */}
-                  <div className="w-full mt-2 opacity-40 group-hover:opacity-70 transition-opacity duration-500">
+                  <div className="w-full mt-auto pt-4 opacity-40 group-hover:opacity-70 transition-opacity duration-500">
                     <svg className="w-full h-2 text-orange-400 fill-none stroke-current stroke-[3]" viewBox="0 0 100 12" preserveAspectRatio="none">
                       <path d="M0,6 C30,12 70,0 100,6" strokeLinecap="round" />
                     </svg>

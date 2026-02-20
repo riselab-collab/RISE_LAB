@@ -147,10 +147,10 @@ const Navbar = () => {
     { name: 'Publications', path: '/publications' },
     { name: 'Projects Funding', path: '/projects-funded' },
     { name: 'Resources', path: '/teachings' },
-    { name: 'Positions', path: '/positions' },
     { name: 'Equipment', path: '/equipment' },
     { name: 'Gallery', path: '/gallery' },
     { name: 'Contact Us', path: '/contact' },
+    { name: 'Positions', path: '/positions' },
   ];
 
   const isActive = (path) => {

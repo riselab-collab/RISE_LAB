@@ -41,15 +41,15 @@ export const phdStudents = [
 ];
 
 export const btechStudents = [
-  { name: "Prerana", batch: "2022–2026 [MME]", area: "Brazing of dissimilar Metals", image: "prerana.jpg" },
-  { name: "Paidi Sathwika", batch: "2022–2026 [MME]", area: "Role of retained austenite in Medium Mn steels", image: "paidi_sathwika.jpg" },
-  { name: "Mudu Narendra Nayak", batch: "2022–2026 [MME]", area: "Archeometallurgical Investigation of Ancient Sword: Microstructure and Manufacturing", image: "mudu_narendra_nayak.jpg" },
-  { name: "Banoth Deepak Teja", batch: "2022–2026 [MME]", area: "Comparative Study of Mechanical Performance of Gray and Ductile Cast iron Components Manufactured Via Lost Foam and Sand Mould Castings", image: "banoth_deepak_teja.jpg" }
+  { name: "Prerana", timeline: "2022 – 2026", image: "prerana.jpg" },
+  { name: "Paidi Sathwika", timeline: "2022 – 2026", image: "paidi_sathwika.jpg" },
+  { name: "Mudu Narendra Nayak", timeline: "2022 – 2026", image: "mudu_narendra_nayak.jpg" },
+  { name: "Banoth Deepak Teja", timeline: "2022 – 2026", image: "banoth_deepak_teja.jpg" }
 ];
 
 export const alumni = [
-  { name: "Mr. Vishnu Prasad (Intern)", place: "Current place: IIT Madras", image: "vishnu_prasad.jpg" },
-  { name: "Mr. Shashi Shekhar Prajapati (Intern)", place: "Current place: UNO Minda, Gujarat", image: "shashi_shekhar_prajapati.jpg" },
-  { name: "Ms. Sejal Tandekar (Intern)", place: "Current place: O.P. Jindal University", image: "sejal_tandekar.jpg" },
-  { name: "Mr. Rahul Kumar Sahu (Intern)", place: "Current place: O.P. Jindal University", image: "rahul_kumar_sahu.jpg" }
+  { name: "Mr. Vishnu Prasad", timeline: "2023 – 2024", image: "vishnu_prasad.jpg" },
+  { name: "Mr. Shashi Shekhar Prajapati", timeline: "2023 – 2024", image: "shashi_shekhar_prajapati.jpg" },
+  { name: "Ms. Sejal Tandekar", timeline: "2022 – 2023", image: "sejal_tandekar.jpg" },
+  { name: "Mr. Rahul Kumar Sahu", timeline: "2022 – 2023", image: "rahul_kumar_sahu.jpg" }
 ];

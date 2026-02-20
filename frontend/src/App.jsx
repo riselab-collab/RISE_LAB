@@ -42,9 +42,9 @@ function App() {
             <Route path="/publications" element={<Publications />} />
             <Route path="/projects-funded" element={<ProjectsFunded />} />
             <Route path="/teachings" element={<Teachings />} />
-            <Route path="/positions" element={<Positions />} />
             <Route path="/gallery" element={<Gallery />} />
             <Route path="/contact" element={<Contact />} />
+            <Route path="/positions" element={<Positions />} />
 
             {/* Secondary / Footer Routes */}
             <Route path="/about" element={<About />} />

@@ -53,6 +53,14 @@ const Positions = () => {
         bodyText: 'text-slate-700',
         accentBg: 'bg-cyan-100',
         btn: 'bg-cyan-600 hover:bg-cyan-700',
+      },
+      purple: {
+        border: 'border-purple-600',
+        bg: 'bg-purple-50',
+        headerText: 'text-purple-900',
+        bodyText: 'text-slate-700',
+        accentBg: 'bg-purple-100',
+        btn: 'bg-purple-600 hover:bg-purple-700',
       }
     };
 
@@ -140,32 +148,32 @@ const Positions = () => {
             {/* SECTION 3: M.Tech. Thesis */}
             <PositionSection
               title="M.Tech. Thesis"
-              themeColor="emerald"
+              themeColor="purple"
               onApply={() => handleApply("M.Tech. Thesis")}
             >
-              <p className="text-lg leading-relaxed mb-6 font-medium text-emerald-900">
+              <p className="text-lg leading-relaxed mb-6 font-medium text-purple-900">
                 The RISE lab welcomes highly motivated M.Tech. students to engage in cutting-edge research.
               </p>
 
               <div className="grid md:grid-cols-2 gap-6 mb-6">
-                <div className="bg-emerald-50/50 p-5 rounded-lg border border-emerald-100">
-                  <h3 className="font-bold text-emerald-800 mb-2">IIT Ropar Students:</h3>
+                <div className="bg-purple-50/50 p-5 rounded-lg border border-purple-100">
+                  <h3 className="font-bold text-purple-800 mb-2">IIT Ropar Students:</h3>
                   <p className="text-slate-700 text-sm leading-relaxed">
                     Conduct your M.Tech. thesis research within the RISE lab. Collaborate with our researchers and contribute to impactful projects.
                   </p>
                 </div>
-                <div className="bg-emerald-50/50 p-5 rounded-lg border border-emerald-100">
-                  <h3 className="font-bold text-emerald-800 mb-2">Students from Other Institutions:</h3>
+                <div className="bg-purple-50/50 p-5 rounded-lg border border-purple-100">
+                  <h3 className="font-bold text-purple-800 mb-2">Students from Other Institutions:</h3>
                   <p className="text-slate-700 text-sm leading-relaxed">
                     Gain valuable research experience and enhance your M.Tech. studies with a research internship (minimum 6-month commitment).
                   </p>
                 </div>
               </div>
 
-              <div className="bg-emerald-50 p-4 rounded-lg border border-emerald-100">
+              <div className="bg-purple-50 p-4 rounded-lg border border-purple-100">
                 <p className="text-slate-800 font-medium">
                   <span className="font-bold">Application: </span>
-                  Email <a href="mailto:lava@iitrpr.ac.in" className="text-emerald-700 underline hover:text-emerald-900">lava@iitrpr.ac.in</a> to share your research interests and discuss available projects.
+                  Email <a href="mailto:lava@iitrpr.ac.in" className="text-purple-700 underline hover:text-purple-900">lava@iitrpr.ac.in</a> to share your research interests and discuss available projects.
                 </p>
               </div>
             </PositionSection>
