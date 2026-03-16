@@ -189,19 +189,19 @@ const Navbar = () => {
             </div>
 
             {/* Desktop Menu */}
-            <div className="hidden xl:flex items-end space-x-1 h-full pb-0">
+            <div className="hidden xl:flex items-end space-x-1 h-full pb-0 border-b-[3px] border-white">
               {links.map((link) => (
                 <div
                   key={link.path}
-                  className="relative group h-full flex items-center"
+                  className="relative group h-full flex items-end"
                   onMouseEnter={() => link.dropdown && setResearchDropdownOpen(true)}
                   onMouseLeave={() => link.dropdown && setResearchDropdownOpen(false)}
                 >
                   <Link
                     to={link.path}
-                    className={`px-4 py-1.5 text-sm font-bold transition-all duration-200 relative flex items-center rounded-t-lg z-10 mb-0 ${isActive(link.path)
-                      ? 'bg-white text-[#0B5472] border-2 border-[#0B5472] border-b-0'
-                      : 'border-transparent text-white/90 hover:bg-white/10 hover:text-white'
+                    className={`px-4 py-2 text-sm font-bold transition-all duration-200 relative flex items-center rounded-t-lg z-10 ${isActive(link.path)
+                      ? 'bg-white text-[#0B5472] -mb-[3px] z-50'
+                      : 'text-white/90 hover:bg-white/10 hover:text-white mb-0'
                       }`}
                   >
                     {link.name}
