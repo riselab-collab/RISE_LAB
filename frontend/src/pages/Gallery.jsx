@@ -3,7 +3,7 @@ import { ArrowLeft, Folder, Image as ImageIcon, ChevronDown, ChevronRight } from
 import { motion, AnimatePresence } from 'framer-motion';
 
 // Dynamically load images
-const galleryImages = import.meta.glob('../assets/gallery/*.{png,jpg,jpeg,svg}', { eager: true, as: 'url' });
+const galleryImages = import.meta.glob('../assets/gallery/*.{png,jpg,jpeg,svg}', { eager: true, query: '?url', import: 'default' });
 
 const getGalleryImage = (filename) => {
   const key = `../assets/gallery/${filename}`;

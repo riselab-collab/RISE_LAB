@@ -113,7 +113,7 @@ const Home = () => {
   }, []);
 
   // --- Helpers ---
-  const homeAssets = import.meta.glob('../assets/home/*.{png,jpg,jpeg,svg,webp}', { eager: true, as: 'url' });
+  const homeAssets = import.meta.glob('../assets/home/*.{png,jpg,jpeg,svg,webp}', { eager: true, query: '?url', import: 'default' });
   const getAsset = (name) => {
     for (const ext of ['jpg', 'jpeg', 'png', 'svg', 'webp']) {
       const key = `../assets/home/${name}.${ext}`;
