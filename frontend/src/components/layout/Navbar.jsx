@@ -166,15 +166,19 @@ const Navbar = () => {
         
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
           
+          {/* This keeps pure white shooting infinitely off the left side of the screen */}
           <div className="absolute top-0 right-full w-[100vw] h-full bg-[#FFFFFF] z-0"></div>
           
-          {/* UPDATED: White stops earlier at 220px, finishes transition to pure blue by 290px completely */}
-          <div className="absolute top-0 left-0 w-[350px] h-full bg-[linear-gradient(to_right,#FFFFFF_0px,#FFFFFF_220px,#0B5472_290px)] z-0"></div>
+          {/* THE NEW GRADIENT LOGIC: 
+              1. Pure white from 0px to 30px (Just a tiny sliver at the start)
+              2. Fades from white to blue between 30px and 340px (Spans across the logo and the empty gap)
+              3. Hits pure blue at 340px (Safely before the Home button)
+          */}
+          <div className="absolute top-0 left-0 w-[450px] h-full bg-[linear-gradient(to_right,#FFFFFF_0px,#FFFFFF_30px,#0B5472_340px)] z-0"></div>
 
           <div className="flex justify-between h-20 relative z-10">
             
             {/* Logo/Title */}
-            {/* UPDATED: mr-20 guarantees empty space for the transition to happen before Home starts */}
             <div className="flex items-center flex-shrink-0 mr-20"> 
               <Link to="/" className="flex items-center gap-3">
                 <img
