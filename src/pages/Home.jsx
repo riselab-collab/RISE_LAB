@@ -152,7 +152,10 @@ const Home = () => {
 
             {/* LEFT: PROFILE (30-35%) */}
             <div className="w-full lg:w-[35%] flex flex-col justify-center">
-              <div className="bg-white rounded-2xl shadow-lg border border-gray-100 border-l-4 border-l-[#FF6600] overflow-hidden p-8 text-center h-full flex flex-col justify-center transform transition-transform hover:-translate-y-1 duration-300">
+              {/* Parent card: flex flex-col items-center ensures horizontal centering for children */}
+              <div className="bg-white rounded-2xl shadow-lg border border-gray-100 border-l-4 border-l-[#FF6600] overflow-hidden p-8 flex flex-col items-center h-full transform transition-transform hover:-translate-y-1 duration-300">
+                
+                {/* Photo: mx-auto centers it horizontally */}
                 <div className="w-56 h-56 mx-auto mb-6 rounded-2xl overflow-hidden shadow-md relative shrink-0 bg-gray-50">
                   <img
                     src={profileImg}
@@ -160,25 +163,34 @@ const Home = () => {
                     className="w-full h-full object-contain object-center"
                   />
                 </div>
-                <h2 className="text-3xl font-bold text-[#0B5472] mb-2">Dr. Avala Lavakumar</h2>
-                <p className="text-[#FF6600] font-semibold text-lg mb-4">Assistant Professor</p>
+                
+                {/* Text lines centered below the image */}
+                <h2 className="text-3xl font-bold text-[#0B5472] mb-2 text-center">Dr. Avala Lavakumar</h2>
+                <p className="text-[#FF6600] font-semibold text-lg mb-4 text-center">Assistant Professor</p>
 
-                <div className="space-y-4 text-sm text-gray-700 border-t border-gray-100 pt-6 text-left">
-                  <div className="flex items-start gap-3">
-                    <MapPin size={20} className="text-[#FF6600] mt-0.5 shrink-0" />
-                    <div>
-                      <p className="font-semibold text-gray-900">Dept. of Metallurgical and Materials Eng.</p>
-                      <p>Indian Institute of Technology Ropar</p>
-                      <p className="text-xs text-gray-500 mt-1">B-M05, Har Gobind Khorana Building</p>
+                {/* --- CONTACT BLOCK --- */}
+                {/* Main contact container: text-center ensures horizontal centering of the inline block below */}
+                <div className="space-y-4 text-sm text-gray-700 border-t border-gray-100 pt-6 text-center w-full">
+                  
+                  {/* Inline-Block sub-container: Groups the contact lines into a centered box.
+                      text-left ensures that within this centered box, icons and text start from a single vertical line. */}
+                  <div className="inline-block text-left space-y-4">
+                    <div className="flex items-start gap-3">
+                      <MapPin size={20} className="text-[#FF6600] mt-0.5 shrink-0" />
+                      <div>
+                        <p className="font-semibold text-gray-900">Dept. of Metallurgical and Materials Eng.</p>
+                        <p>Indian Institute of Technology Ropar</p>
+                        <p className="text-xs text-gray-500 mt-1">B-M05, Har Gobind Khorana Building</p>
+                      </div>
                     </div>
-                  </div>
-                  <div className="flex items-center gap-3">
-                    <Mail size={18} className="text-[#FF6600] shrink-0" />
-                    <a href="mailto:lava@iitrpr.ac.in" className="hover:text-[#FF6600] transition-colors font-medium">lava@iitrpr.ac.in</a>
-                  </div>
-                  <div className="flex items-center gap-3">
-                    <Phone size={18} className="text-[#FF6600] shrink-0" />
-                    <a href="tel:+911881232412" className="hover:text-[#FF6600] transition-colors font-medium">+91-1881-23-2412</a>
+                    <div className="flex items-center gap-3">
+                      <Mail size={18} className="text-[#FF6600] shrink-0" />
+                      <a href="mailto:lava@iitrpr.ac.in" className="hover:text-[#FF6600] transition-colors font-medium">lava@iitrpr.ac.in</a>
+                    </div>
+                    <div className="flex items-center gap-3">
+                      <Phone size={18} className="text-[#FF6600] shrink-0" />
+                      <a href="tel:+911881232412" className="hover:text-[#FF6600] transition-colors font-medium">+91-1881-23-2412</a>
+                    </div>
                   </div>
                 </div>
 

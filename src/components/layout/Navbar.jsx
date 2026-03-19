@@ -179,7 +179,8 @@ const Navbar = () => {
           <div className="flex justify-between h-20 relative z-10">
             
             {/* Logo/Title */}
-            <div className="flex items-center flex-shrink-0 mr-20"> 
+            {/* I added -ml-6 right here. You can change it to -ml-8 or -ml-10 to pull it even further left! */}
+            <div className="flex items-center flex-shrink-0 mr-20 -ml-6 lg:-ml-8"> 
               <Link to="/" className="flex items-center gap-3">
                 <img
                   src={getLogo()}

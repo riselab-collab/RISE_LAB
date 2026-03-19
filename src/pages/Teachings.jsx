@@ -198,9 +198,14 @@ const Teachings = () => {
 
   const labWorkbooks = [
     {
-      title: "Physical Metallurgy Laboratory",
+      title: "1. Physical Metallurgy Laboratory",
       view: "https://drive.google.com/file/d/1iN_o7WnNZQXy82DQTSoochoOBmPxblTM/view",
       download: "https://drive.google.com/uc?export=download&id=1iN_o7WnNZQXy82DQTSoochoOBmPxblTM"
+    },
+    {
+      title: "2. Phase Transformations & Heat Treatment Laboratory Observation Book",
+      view: "https://drive.google.com/file/d/1QqabRzs9nkOmKIWETQD3caaoxMOcLT2u/view?usp=drive_link",
+      download: "https://drive.google.com/uc?export=download&id=1QqabRzs9nkOmKIWETQD3caaoxMOcLT2u"
     }
   ];
 
