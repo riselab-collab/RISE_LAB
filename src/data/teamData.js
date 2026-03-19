@@ -60,10 +60,17 @@ export const phdStudents = [
     "image": "Sappioi_Sanjay.jpg"
    },
    {
-    name: "Sima srinivasa rao",
-    role: "Ph.D. Student (ERP): 2024 January ~",
+    name: "Simma srinivasa rao",
+    role: "Ph.D. Student (ERP): 2026 January ~",
     area: "Recycling of Copper",
-    bio: "Need to be updated",
+    bio: "Simma Srinivas is a Metallurgical and Materials Engineer (M.Tech, IIT Kanpur) with 8+ years in steelmaking at RINL, JSW Steel, and SAIL. Skilled in alloy design, failure analysis, and process optimization, he delivers cost-effective solutions. His expertise spans sintering, BOF-LHF refining, and advanced materials R&D, with innovations in bi-metallic tools, recycling technologies, and AI-assisted material testing systems.",
+    image: "Sima_srinivasa_rao.jpg"
+  },
+   {
+    name: "Simma srinivasa rao",
+    role: "Ph.D. Student (ERP): 2026 January ~",
+    area: "Recycling of Copper",
+    bio: "Simma Srinivas is a Metallurgical and Materials Engineer (M.Tech, IIT Kanpur) with 8+ years in steelmaking at RINL, JSW Steel, and SAIL. Skilled in alloy design, failure analysis, and process optimization, he delivers cost-effective solutions. His expertise spans sintering, BOF-LHF refining, and advanced materials R&D, with innovations in bi-metallic tools, recycling technologies, and AI-assisted material testing systems.",
     image: "Sima_srinivasa_rao.jpg"
   }
 ];
